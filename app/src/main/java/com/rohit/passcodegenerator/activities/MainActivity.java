@@ -111,6 +111,7 @@ public class MainActivity extends AppCompatActivity {
         UserDataModel userDataModel = new UserDataModel();
         userDataModel.setId(count);
         userDataModel.setUsername("User "+count);
+        userDataModel.setImagePath(absolutePath);
         String passCode=getUniquePasscode(localCount++);
         if(passCode.equalsIgnoreCase("Error")){
             Toast.makeText(this, "User cannot be added !", Toast.LENGTH_SHORT).show();
