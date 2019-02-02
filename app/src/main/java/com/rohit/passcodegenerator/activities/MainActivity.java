@@ -129,7 +129,7 @@ public class MainActivity extends AppCompatActivity {
             Random rnd = new Random();
             int n = 100000 + rnd.nextInt(900000);
             if(RealmHelper.isPassCodeFound(n)){
-                return getUniquePasscode(localCount);
+                return getUniquePasscode(localCount+1);
             }else{
                 PassCode passCode=new PassCode();
                 passCode.setPassC(n);
